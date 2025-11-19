@@ -23,6 +23,221 @@
     </div>
 
 
+    <div class = "container">
+
+        <div class = "form-section">
+            <h2>Add New Student</h2>
+            
+            
+            <label>Student ID *</label>
+            <input type="text" placeholder ="e.g.,STU2024001">
+
+            <label>Full Name *</label>
+            <input type="text" placeholder ="Enter Full Name">
+
+
+            <label>Email Address *</label>
+            <input type="email" placeholder ="student@example.com">
+
+
+            <label>Phone Number *</label>
+            <input type="text" placeholder ="+1 (555)">
+
+
+            <label>Date of Birth*</label>
+            <input type="date">
+
+
+            <label>Gender *</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender">Male</label>
+                <label><input type="radio" name="gender">Female</label>
+                <label><input type="radio" name="gender">Other</label>
+            </div><br>
+
+            <label>Select Course *</label>
+            <select>
+                <option>-- Choose a course --</option>
+                <option>Computer Science</option>
+                <option>Bussiness Administration</option>
+                <option>Engineering</option>
+                <option>Medicine</option>
+                <option>Arts & Humanities</option>
+            </select><br><br>
+
+            <label>Academic Year</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select><br><br>
+
+
+            <label>Additional Services</label>
+            <div class ="checkbox">
+                <label><input type="checkbox">Hostel</label>
+                <label><input type="checkbox">Transport</label>
+                <label><input type="checkbox">Library</label>
+            </div>
+
+            <button class="register-btn">Register Student</button>
+            <button class="clear-btn" type="reset">Clear Form</button>
+
+            
+        </div>
+
+
+        <div class="table-section">
+            <h2>Registered Students</h2>
+            <input type="text" class="search" placeholder="Search students....">
+
+
+            <table>
+                
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                
+
+                
+                <tr>
+                    <td>STU2024001</td>
+                    <td>John Smith</td>
+                    <td>Computer Science</td>
+                    <td>3</td>
+                    <td>john.smith@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024002</td>
+                    <td>Emily Johnson</td>
+                    <td>Bussiness Admin</td>
+                    <td>2</td>
+                    <td>emily.j@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024003</td>
+                    <td>Michael Brown</td>
+                    <td>Engineering</td>
+                    <td>4</td>
+                    <td>m.brown@example.com</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024004</td>
+                    <td>Sarah Davis</td>
+                    <td>Medicine</td>
+                    <td>1</td>
+                    <td>sarah.d@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024005</td>
+                    <td>David Wilson</td>
+                    <td>Arts & Humanities</td>
+                    <td>2</td>
+                    <td>d.wilson@example.com</td>
+                    <td><span class="status-inactive">Inactive</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024006</td>
+                    <td>Jessica Martinez</td>
+                    <td>Computer Science</td>
+                    <td>3</td>
+                    <td>j.martinez@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>STU2024007</td>
+                    <td>Christopher Lee</td>
+                    <td>Engineering</td>
+                    <td>1</td>
+                    <td>c.lee@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>STU2024008</td>
+                    <td>Amanda Taylor</td>
+                    <td>Bussiness Admin</td>
+                    <td>4</td>
+                    <td>a.taylor@example.com</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+                
+            </table>
+
+            <div class="pagination">
+                <button>&laquo; Previous</button>
+                <button class="page active">1</button>
+                <button class="page">2</button>
+                <button class="page">3</button>
+                <button>Next &raquo;</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
     
 
 </body>
