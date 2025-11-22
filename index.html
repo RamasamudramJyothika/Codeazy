@@ -7,14 +7,15 @@
     <title>Student Management System</title>
 </head>
 <body>
+
     
-    <div class = "header">Student Management System
-        <div class = "subtext">Manage student registrations and records efficiently
-        </div>
+    <div class="header">
+        Student Management System
+        <div class="subtext">Manage student registrations and records efficiently</div>
     </div>
 
-
-    <div class = "nav">
+    
+    <div class="nav">
         <div>Dashboard</div>
         <div>Students</div>
         <div>Courses</div>
@@ -22,48 +23,43 @@
         <div>Settings</div>
     </div>
 
+    <div class="container">
 
-    <div class = "container">
-
-        <div class = "form-section">
+        
+        <div class="form-section">
             <h2>Add New Student</h2>
-            
-            
+
             <label>Student ID *</label>
-            <input type="text" placeholder ="e.g.,STU2024001">
+            <input type="text" placeholder="e.g., STU2024001">
 
             <label>Full Name *</label>
-            <input type="text" placeholder ="Enter Full Name">
-
+            <input type="text" placeholder="Enter Full Name">
 
             <label>Email Address *</label>
-            <input type="email" placeholder ="student@example.com">
-
+            <input type="email" placeholder="student@example.com">
 
             <label>Phone Number *</label>
-            <input type="text" placeholder ="+1 (555)">
+            <input type="text" placeholder="+1 (555)">
 
-
-            <label>Date of Birth*</label>
+            <label>Date of Birth *</label>
             <input type="date">
 
-
             <label>Gender *</label>
-            <div class="gender-group">
-                <label><input type="radio" name="gender">Male</label>
-                <label><input type="radio" name="gender">Female</label>
-                <label><input type="radio" name="gender">Other</label>
-            </div><br>
+            <div class="gender">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Others</label>
+            </div>
 
             <label>Select Course *</label>
             <select>
                 <option>-- Choose a course --</option>
                 <option>Computer Science</option>
-                <option>Bussiness Administration</option>
+                <option>Business Administration</option>
                 <option>Engineering</option>
                 <option>Medicine</option>
                 <option>Arts & Humanities</option>
-            </select><br><br>
+            </select>
 
             <label>Academic Year</label>
             <select>
@@ -71,31 +67,26 @@
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
-            </select><br><br>
-
+            </select>
 
             <label>Additional Services</label>
-            <div class ="checkbox">
-                <label><input type="checkbox">Hostel</label>
-                <label><input type="checkbox">Transport</label>
-                <label><input type="checkbox">Library</label>
-            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Hostel</label>
+                <label><input type="checkbox"> Transport</label>
+                <label><input type="checkbox"> Library</label>
+            </div><br>
+            
 
             <button class="register-btn">Register Student</button>
             <button class="clear-btn" type="reset">Clear Form</button>
-
-            
         </div>
-
 
         <div class="table-section">
             <h2>Registered Students</h2>
-            <input type="text" class="search" placeholder="Search students....">
+            <input type="text" class="search" placeholder="Search">
 
 
             <table>
-                
-
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
@@ -105,9 +96,7 @@
                     <th>Status</th>
                     <th>Actions</th>
                 </tr>
-                
 
-                
                 <tr>
                     <td>STU2024001</td>
                     <td>John Smith</td>
@@ -121,11 +110,10 @@
                     </td>
                 </tr>
 
-
                 <tr>
                     <td>STU2024002</td>
                     <td>Emily Johnson</td>
-                    <td>Bussiness Admin</td>
+                    <td>Business Admin</td>
                     <td>2</td>
                     <td>emily.j@example.com</td>
                     <td><span class="status-active">Active</span></td>
@@ -162,7 +150,6 @@
                         <button class="btn-delete">Delete</button>
                     </td>
                 </tr>
-
 
                 <tr>
                     <td>STU2024005</td>
@@ -207,7 +194,6 @@
                 </tr>
 
 
-
                 <tr>
                     <td>STU2024008</td>
                     <td>Amanda Taylor</td>
@@ -221,24 +207,77 @@
                     </td>
                 </tr>
 
-                
+
             </table>
 
+            
             <div class="pagination">
-                <button>&laquo; Previous</button>
-                <button class="page active">1</button>
-                <button class="page">2</button>
-                <button class="page">3</button>
-                <button>Next &raquo;</button>
-
+                <a href="#" class="btn prev">« Previous</a>
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <a href="#" class="btn next">Next »</a>
             </div>
         </div>
-
-
     </div>
 
 
-    
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    Student Management System helps educational institutions manage
+                    their student data efficiently and securely.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Faculty Portal</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@studentms.edu</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📍 123 Education Street</p>
+                <p>🏫 University Campus</p>
+                <p>🌐 www.studentms.edu</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2024 Student Management System. All rights reserved.
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </body>
 </html>
