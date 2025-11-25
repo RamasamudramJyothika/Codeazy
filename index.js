@@ -113,4 +113,16 @@ const studentArray4 = studentArray.map(item => {
     };
 });
 console.log(studentArray4);
+//map():processes every item and returns a new array of new objects and allows us to add or modify fields without touching the original objects.
+
+
+//Delete any one property from each object.
+const studentArray5 = studentArray.map(item => {
+  let copy = { ...item }; // create a shallow copy
+  delete copy.color;      // delete from the copy only
+  return copy;
+});
+
+console.log(studentArray5);
+
 
