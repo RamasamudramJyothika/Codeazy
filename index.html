@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Management System</title>
+</head>
+<body>
+
+    
+    <div class="header">
+        Student Management System
+        <div class="subtext">Manage student registrations and records efficiently</div>
+    </div>
+
+    
+    <div class="nav">
+        <div>Dashboard</div>
+        <div>Students</div>
+        <div>Courses</div>
+        <div>Reports</div>
+        <div>Settings</div>
+    </div>
+
+    <div class="container">
+
+        
+        <div class="form-section">
+            <h2>Add New Student</h2>
+
+            <label>Student ID *</label>
+            <input type="text" placeholder="e.g., STU2024001">
+
+            <label>Full Name *</label>
+            <input type="text" placeholder="Enter Full Name">
+
+            <label>Email Address *</label>
+            <input type="email" placeholder="student@example.com">
+
+            <label>Phone Number *</label>
+            <input type="text" placeholder="+1 (555)">
+
+            <label>Date of Birth *</label>
+            <input type="date">
+
+            <label>Gender *</label>
+            <div class="gender">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+                <label><input type="radio" name="gender"> Others</label>
+            </div>
+
+            <label>Select Course *</label>
+            <select>
+                <option>-- Choose a course --</option>
+                <option>Computer Science</option>
+                <option>Business Administration</option>
+                <option>Engineering</option>
+                <option>Medicine</option>
+                <option>Arts & Humanities</option>
+            </select>
+
+            <label>Academic Year</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <label>Additional Services</label>
+            <div class="checkbox">
+                <label><input type="checkbox"> Hostel</label>
+                <label><input type="checkbox"> Transport</label>
+                <label><input type="checkbox"> Library</label>
+            </div><br>
+            
+
+            <button class="register-btn">Register Student</button>
+            <button class="clear-btn" type="reset">Clear Form</button>
+        </div>
+
+        <div class="table-section">
+            <h2>Registered Students</h2>
+            <input type="text" class="search" placeholder="Search">
+
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+
+                <tr>
+                    <td>STU2024001</td>
+                    <td>John Smith</td>
+                    <td>Computer Science</td>
+                    <td>3</td>
+                    <td>john.smith@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>STU2024002</td>
+                    <td>Emily Johnson</td>
+                    <td>Business Admin</td>
+                    <td>2</td>
+                    <td>emily.j@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024003</td>
+                    <td>Michael Brown</td>
+                    <td>Engineering</td>
+                    <td>4</td>
+                    <td>m.brown@example.com</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024004</td>
+                    <td>Sarah Davis</td>
+                    <td>Medicine</td>
+                    <td>1</td>
+                    <td>sarah.d@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>STU2024005</td>
+                    <td>David Wilson</td>
+                    <td>Arts & Humanities</td>
+                    <td>2</td>
+                    <td>d.wilson@example.com</td>
+                    <td><span class="status-inactive">Inactive</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024006</td>
+                    <td>Jessica Martinez</td>
+                    <td>Computer Science</td>
+                    <td>3</td>
+                    <td>j.martinez@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>STU2024007</td>
+                    <td>Christopher Lee</td>
+                    <td>Engineering</td>
+                    <td>1</td>
+                    <td>c.lee@example.com</td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>STU2024008</td>
+                    <td>Amanda Taylor</td>
+                    <td>Bussiness Admin</td>
+                    <td>4</td>
+                    <td>a.taylor@example.com</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </td>
+                </tr>
+
+
+            </table>
+
+            
+            <div class="pagination">
+                <a href="#" class="btn prev">« Previous</a>
+                <a href="#" class="page active">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="page">3</a>
+                <a href="#" class="btn next">Next »</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    Student Management System helps educational institutions manage
+                    their student data efficiently and securely.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Faculty Portal</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@studentms.edu</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📍 123 Education Street</p>
+                <p>🏫 University Campus</p>
+                <p>🌐 www.studentms.edu</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2024 Student Management System. All rights reserved.
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</body>
+</html>
